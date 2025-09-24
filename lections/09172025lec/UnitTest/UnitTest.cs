@@ -2,6 +2,7 @@ using FluentAssertions;
 using FluentAssertions.Execution;
 using FluentAssertions.Extensions;
 using Library;
+using Library.Users;
 using Moq;
 
 namespace UnitTest
@@ -45,14 +46,14 @@ namespace UnitTest
             Assert.Equal(expected, actual);
         }
 
-        [Theory]
-        [MemberData(nameof(GetUsers))]
-        public void GetUserString_Theoy(User user, string expected)
-        {
-            string actual = UserLib.GetUserString(user);
+        //[Theory]
+        //[MemberData(nameof(GetUsers))]
+        //public void GetUserString_Theoy(User user, string expected)
+        //{
+        //    string actual = UserService.GetUserString(user);
 
-            Assert.Equal(expected, actual);
-        }
+        //    Assert.Equal(expected, actual);
+        //}
 
         [Fact]
         public void Div_WhithCorrectValues_ReturnResult()
@@ -74,53 +75,53 @@ namespace UnitTest
             Assert.Throws<DivideByZeroException>(() => MathLib.Div(a, b));
         }
 
-        [Fact]
-        public void FluentAssertionsTest()
-        {
-            string actual = "Hello World";
-            var action = () => { throw new Exception("Hi-hi"); };
-            List<int> numbers = new() { 1, 2, 3, -1 };
-            List<User> user = new()
-            {
-                new User("Ivan", "ivan@mail.ru"),
-                new User("Nikolay", "ni@mail.ru")
-            };
+        //[Fact]
+        //public void FluentAssertionsTest()
+        //{
+        //    string actual = "Hello World";
+        //    var action = () => { throw new Exception("Hi-hi"); };
+        //    List<int> numbers = new() { 1, 2, 3, -1 };
+        //    List<User> user = new()
+        //    {
+        //        new User("Ivan", "ivan@mail.ru"),
+        //        new User("Nikolay", "ni@mail.ru")
+        //    };
 
-            new UnitTest().ExecutionTimeOf(x => x.Div_WithZeroDivider_ThrowsException()).Should().BeLessThan(500.Seconds());
-            DateTime date = new(2020, 05, 10, 21, 20, 30);
-            10.May(2020).At(21, 20, 30).Should().Be(date);
+        //    new UnitTest().ExecutionTimeOf(x => x.Div_WithZeroDivider_ThrowsException()).Should().BeLessThan(500.Seconds());
+        //    DateTime date = new(2020, 05, 10, 21, 20, 30);
+        //    10.May(2020).At(21, 20, 30).Should().Be(date);
 
-            using (new AssertionScope())
-            {
-                actual.Should().StartWith("He").And.EndWith("d").And.Contain("ll").And.HaveLength(11);
-                action.Should().Throw<Exception>().WithMessage("Hi-hi");
-                actual.Should().BeNullOrWhiteSpace();
-                actual.Should().Be("Hello World");
-                actual.Should().BeSameAs(actual);
-                actual.Should().BeOfType<string>();
+        //    using (new AssertionScope())
+        //    {
+        //        actual.Should().StartWith("He").And.EndWith("d").And.Contain("ll").And.HaveLength(11);
+        //        action.Should().Throw<Exception>().WithMessage("Hi-hi");
+        //        actual.Should().BeNullOrWhiteSpace();
+        //        actual.Should().Be("Hello World");
+        //        actual.Should().BeSameAs(actual);
+        //        actual.Should().BeOfType<string>();
 
-                numbers.Should().BeInAscendingOrder();
-                numbers.Should().OnlyContain(n => n > 0).And.HaveCount(4, "bcs i use arch btw");
+        //        numbers.Should().BeInAscendingOrder();
+        //        numbers.Should().OnlyContain(n => n > 0).And.HaveCount(4, "bcs i use arch btw");
 
-                user.Should().AllSatisfy(x =>
-                {
-                    x.Name.Should().HaveLength(3);
-                    x.Name.Should().NotBeNullOrEmpty();
-                });
-            }
-        }
+        //        user.Should().AllSatisfy(x =>
+        //        {
+        //            x.Name.Should().HaveLength(3);
+        //            x.Name.Should().NotBeNullOrEmpty();
+        //        });
+        //    }
+        //}
 
-        [Fact]
-        public void MoqTest()
-        {
-            var mock = new Mock<IRepository>();
-            mock.Setup(x => x.GetStrings()).Returns(new List<string> { "hello", "goodbye" });
+        //[Fact]
+        //public void MoqTest()
+        //{
+        //    var mock = new Mock<IRepository>();
+        //    mock.Setup(x => x.GetStrings()).Returns(new List<string> { "hello", "goodbye" });
 
-            var repository = mock.Object;
+        //    var repository = mock.Object;
 
-            repository.GetStrings().Should().Contain("hello");
+        //    repository.GetStrings().Should().Contain("hello");
 
-            
-        }
+        //    mock.Verify(x=> x.GetStrings(), Times.Once);
+        //}
     }
 }

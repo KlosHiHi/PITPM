@@ -1,4 +1,4 @@
-﻿namespace Library
+﻿namespace Library.Users
 {
     public class User
     {
