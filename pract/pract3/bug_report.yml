@@ -1,0 +1,71 @@
+name: "bug repory"
+description: "issue to create bug report"
+title: "[Ошибка]:"
+labels: ["bug"]
+body:
+  - type: textarea
+    id: rep_desc
+    attributes:
+      label: "Описание ошибки"
+      placeholder: "ошибка заключается в том что..."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Шаги воспроизведения"
+      placeholder: "что нужно сделать, чтобы вопспроизвести ошибку"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Ожидаемый результат"
+      placeholder: "что должно произойти"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Фактический результат"
+      placeholder: "что происходит в итоге"
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "Среда выполнения"
+      options:
+        - Windows 11
+        - Windows 10
+        - Ubuntu
+        - Debian
+        - macOS
+        - Android 16
+        - Android 15
+        - iOS 26
+        - iOS 18
+        - FreeBSD
+    validations:
+      required: true
+  - type: dropdown
+    id: lowpriority
+    attributes:
+      label: "Приоритет"
+      options:
+        - Высокий
+        - Средний
+        - Низкий
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "Серьёзность"
+      options:
+        - Высокая
+        - Средняя
+        - Низкая
+        - Критическая
+    validations:
+      required: true
