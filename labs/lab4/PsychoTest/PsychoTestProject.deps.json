@@ -1,0 +1,305 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "PsychoTestProject/1.0.0": {
+        "dependencies": {
+          "DotNetZip": "1.16.0",
+          "Extended.Wpf.Toolkit": "4.5.0",
+          "Microsoft.Web.WebView2": "1.0.1462.37",
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.39",
+          "ScottPlot.WPF": "4.1.62",
+          "System.Drawing.Common": "7.0.0"
+        },
+        "runtime": {
+          "PsychoTestProject.dll": {}
+        }
+      },
+      "DotNetZip/1.16.0": {
+        "dependencies": {
+          "System.Security.Permissions": "4.7.0",
+          "System.Text.Encoding.CodePages": "4.7.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/DotNetZip.dll": {
+            "assemblyVersion": "1.16.0.0",
+            "fileVersion": "1.16.0.0"
+          }
+        }
+      },
+      "Extended.Wpf.Toolkit/4.5.0": {
+        "runtime": {
+          "lib/net5.0/Xceed.Wpf.AvalonDock.NET5.dll": {
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.5.0.0"
+          },
+          "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll": {
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.5.0.0"
+          },
+          "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll": {
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.5.0.0"
+          },
+          "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll": {
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.5.0.0"
+          },
+          "lib/net5.0/Xceed.Wpf.Toolkit.NET5.dll": {
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.5.0.0"
+          }
+        },
+        "resources": {
+          "lib/net5.0/cs-CZ/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "cs-CZ"
+          },
+          "lib/net5.0/de/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0/es/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0/fr/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0/hu/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net5.0/it/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net5.0/ja-JP/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "ja-JP"
+          },
+          "lib/net5.0/pt-BR/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0/ro/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net5.0/ru/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0/sv/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net5.0/zh-Hans/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/3.1.1": {},
+      "Microsoft.Web.WebView2/1.0.1462.37": {
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.Core.dll": {
+            "assemblyVersion": "1.0.1462.37",
+            "fileVersion": "1.0.1462.37"
+          },
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.WinForms.dll": {
+            "assemblyVersion": "1.0.1462.37",
+            "fileVersion": "1.0.1462.37"
+          },
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.Wpf.dll": {
+            "assemblyVersion": "1.0.1462.37",
+            "fileVersion": "1.0.1462.37"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/WebView2Loader.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "1.0.1462.37"
+          },
+          "runtimes/win-x64/native/WebView2Loader.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "1.0.1462.37"
+          },
+          "runtimes/win-x86/native/WebView2Loader.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "1.0.1462.37"
+          }
+        }
+      },
+      "Microsoft.Win32.SystemEvents/7.0.0": {},
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
+        "runtime": {
+          "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.39.4716"
+          }
+        }
+      },
+      "ScottPlot/4.1.62": {
+        "dependencies": {
+          "System.Drawing.Common": "7.0.0",
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "runtime": {
+          "lib/net6.0/ScottPlot.dll": {
+            "assemblyVersion": "4.1.62.0",
+            "fileVersion": "4.1.62.0"
+          }
+        }
+      },
+      "ScottPlot.WPF/4.1.62": {
+        "dependencies": {
+          "ScottPlot": "4.1.62"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/ScottPlot.WPF.dll": {
+            "assemblyVersion": "4.1.62.0",
+            "fileVersion": "4.1.62.0"
+          }
+        }
+      },
+      "System.Drawing.Common/7.0.0": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "7.0.0"
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {},
+      "System.Security.AccessControl/4.7.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.1",
+          "System.Security.Principal.Windows": "4.7.0"
+        }
+      },
+      "System.Security.Permissions/4.7.0": {
+        "dependencies": {
+          "System.Security.AccessControl": "4.7.0",
+          "System.Windows.Extensions": "4.7.0"
+        }
+      },
+      "System.Security.Principal.Windows/4.7.0": {},
+      "System.Text.Encoding.CodePages/4.7.1": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.1"
+        }
+      },
+      "System.Windows.Extensions/4.7.0": {
+        "dependencies": {
+          "System.Drawing.Common": "7.0.0"
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PsychoTestProject/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DotNetZip/1.16.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CS9sjjXF23FLIbwlLT5k/jXBYxVnLMn01lyAvN/hxFM+UDvSicjTPB9ZMA+Wp/QlvBPbD2pzkAXUp1O50gP/Lw==",
+      "path": "dotnetzip/1.16.0",
+      "hashPath": "dotnetzip.1.16.0.nupkg.sha512"
+    },
+    "Extended.Wpf.Toolkit/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oQP6Qyuz+3kETAC/s+cBEfb8Vzbju6pB7Q5czW4KdkAOpFJTA/SCox8caH6HLQxQ6Lwq2jCeSQOPJKlnpqpFOg==",
+      "path": "extended.wpf.toolkit/4.5.0",
+      "hashPath": "extended.wpf.toolkit.4.5.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RmINcaqiEkawM9C8oxFMN/CZmn1fGKWVsosbSY/8ARUNdHqV47hqhPVbrG3qUqLaRQI5w4HuqFOqrbhoSWcH6w==",
+      "path": "microsoft.netcore.platforms/3.1.1",
+      "hashPath": "microsoft.netcore.platforms.3.1.1.nupkg.sha512"
+    },
+    "Microsoft.Web.WebView2/1.0.1462.37": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-q1B5OWQBJxX4tTcG1JiwUOOPDAfgDwWx9ckEQoo/o55MwE4zeTuFeFv0ghTFr28hxlBSiMQ/6OzRQswyx2D7WA==",
+      "path": "microsoft.web.webview2/1.0.1462.37",
+      "hashPath": "microsoft.web.webview2.1.0.1462.37.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2nXPrhdAyAzir0gLl8Yy8S5Mnm/uBSQQA7jEsILOS1MTyS7DbmV1NgViMtvV1sfCD1ebITpNwb1NIinKeJgUVQ==",
+      "path": "microsoft.win32.systemevents/7.0.0",
+      "hashPath": "microsoft.win32.systemevents.7.0.0.nupkg.sha512"
+    },
+    "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8PZKqw9QOcu42xk8puY4P1+EXHL9YGOR9b7qhaYx5cILHul456H073tj99vyPcCt0W0781T9RwHqkx507ZyUpQ==",
+      "path": "microsoft.xaml.behaviors.wpf/1.1.39",
+      "hashPath": "microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+    },
+    "ScottPlot/4.1.62": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Es+YCGNgj6rGo9t4S9Dd0no1dQ2sRK3bykELyBsumhjv7JQ+xGprdY6ZqEr5K25K/tIlRbuHPFq0gfzSSXx/OQ==",
+      "path": "scottplot/4.1.62",
+      "hashPath": "scottplot.4.1.62.nupkg.sha512"
+    },
+    "ScottPlot.WPF/4.1.62": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jmdYeBa5yW9Cl73JeFP8ljezhmZ/FQ13Q7/rdM68pKj1hHFop6ZKeo/BdCt3g+7eqzue8ksoObDmrEeT9GrTRA==",
+      "path": "scottplot.wpf/4.1.62",
+      "hashPath": "scottplot.wpf.4.1.62.nupkg.sha512"
+    },
+    "System.Drawing.Common/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KIX+oBU38pxkKPxvLcLfIkOV5Ien8ReN78wro7OF5/erwcmortzeFx+iBswlh2Vz6gVne0khocQudGwaO1Ey6A==",
+      "path": "system.drawing.common/7.0.0",
+      "hashPath": "system.drawing.common.7.0.0.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "path": "system.numerics.vectors/4.5.0",
+      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
+    },
+    "System.Security.AccessControl/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JECvTt5aFF3WT3gHpfofL2MNNP6v84sxtXxpqhLBCcDRzqsPBmHhQ6shv4DwwN2tRlzsUxtb3G9M3763rbXKDg==",
+      "path": "system.security.accesscontrol/4.7.0",
+      "hashPath": "system.security.accesscontrol.4.7.0.nupkg.sha512"
+    },
+    "System.Security.Permissions/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dkOV6YYVBnYRa15/yv004eCGRBVADXw8qRbbNiCn/XpdJSUXkkUeIvdvFHkvnko4CdKMqG8yRHC4ox83LSlMsQ==",
+      "path": "system.security.permissions/4.7.0",
+      "hashPath": "system.security.permissions.4.7.0.nupkg.sha512"
+    },
+    "System.Security.Principal.Windows/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ojD0PX0XhneCsUbAZVKdb7h/70vyYMDYs85lwEI+LngEONe/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
+      "path": "system.security.principal.windows/4.7.0",
+      "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
+    },
+    "System.Text.Encoding.CodePages/4.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i2fOvznVVgOOTLUz8FgSap/MsR98I4Iaoz99VXcOW/e7Y2OdY42zhYpBYpZyivk5alYY/UsOWAVswhtjxceodA==",
+      "path": "system.text.encoding.codepages/4.7.1",
+      "hashPath": "system.text.encoding.codepages.4.7.1.nupkg.sha512"
+    },
+    "System.Windows.Extensions/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
+      "path": "system.windows.extensions/4.7.0",
+      "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+    }
+  }
+}
