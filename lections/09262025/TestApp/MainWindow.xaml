@@ -7,9 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <StackPanel>
-            <TextBlock Text="0" x:Name="CountTextBlock"/>
-            <Button x:Name="ClickButton" Content="ЖМИ!" Click="ClickButton_Click"/>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
+            <TextBlock Text="0" x:Name="CountTextBlock" HorizontalAlignment="Center"/>
+            <Button x:Name="ClickButton" Content="ЖМИ!" Click="ClickButton_Click" Margin="10"/>
+            <TextBox x:Name="InputTextBox" AutomationProperties.AutomationId=""/>
         </StackPanel>
     </Grid>
 </Window>
