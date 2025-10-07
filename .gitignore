@@ -208,6 +208,9 @@ DocProject/Help/html
 # Click-Once directory
 publish/
 
+# report directory
+coveragereport/
+
 # Publish Web Output
 *.[Pp]ublish.xml
 *.azurePubxml

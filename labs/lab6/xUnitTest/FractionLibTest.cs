@@ -75,7 +75,7 @@ namespace xUnitTest
         public void OverridenEquals_WithEqualData_ReturnTrue()
         {
             Fraction fraction1 = new(1, 2);
-            var fraction2 = fraction1;
+            object fraction2 = fraction1;
 
             fraction1.Equals(fraction2).Should().BeTrue();
         }
@@ -85,6 +85,15 @@ namespace xUnitTest
         {
             Fraction fraction1 = new(1, 2);
             object fraction2 = new Fraction(3, 5);
+
+            fraction1.Equals(fraction2).Should().BeFalse();
+        }
+
+        [Fact]
+        public void OverridenEquals_WithNullData_ReturnFalse()
+        {
+            Fraction fraction1 = new(1, 2);
+            object fraction2 = null!;
 
             fraction1.Equals(fraction2).Should().BeFalse();
         }
@@ -163,8 +172,7 @@ namespace xUnitTest
         }
 
         [Theory]
-        [InlineData(3, 0, 2, 7)]
-        [InlineData(3, 2, 2, 0)]
+        [InlineData(3, 2, 0, 7)]
         public void DividedOperator_WithUncorrectValues_ThrowException(int firstNum, int firstDenum,
             int secondEnum, int secondDenum)
         {
