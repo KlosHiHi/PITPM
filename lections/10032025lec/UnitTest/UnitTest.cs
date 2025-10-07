@@ -56,7 +56,7 @@ namespace UnitTest
         //}
 
         [Fact]
-        public void Div_WhithCorrectValues_ReturnResult()
+        public void Div_WithCorrectValues_ReturnResult()
         {
             double a = 1, b = 3;
 
