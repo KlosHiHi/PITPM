@@ -84,13 +84,14 @@ namespace xUnitTest
         public void OverridenEquals_WithUnequalData_ReturnFalse()
         {
             Fraction fraction1 = new(1, 2);
-            var fraction2 = new Fraction(3, 5);
+            object fraction2 = new Fraction(3, 5);
 
             fraction1.Equals(fraction2).Should().BeFalse();
         }
 
         [Theory]
         [InlineData(1, 2)]
+        [InlineData(-3, 7)]
         public void OverridenGetHashCode_WithCorrectValues_ReturnCorrectValue(int numerator, int denumerator)
         {
             Fraction fraction = new(numerator, denumerator);
@@ -101,7 +102,10 @@ namespace xUnitTest
 
         [Theory]
         [InlineData(1, 2, 3, 5, 11, 10)]
-        public void PlusOperator_WithCorrectValues_ReturnCorrectValues(int firstNum, int firstDenum, int secondEnum, int secondDenum, int expNum, int expDenum)
+        [InlineData(-4, 3, 2, 5, -14, 15)]
+        [InlineData(-2, -3, 1, 3, 1, 1)]
+        public void PlusOperator_WithCorrectValues_ReturnCorrectValues(int firstNum, int firstDenum, 
+            int secondEnum, int secondDenum, int expNum, int expDenum)
         {
             Fraction fraction1 = new(firstNum, firstDenum);
             Fraction fraction2 = new(secondEnum, secondDenum);
@@ -111,6 +115,65 @@ namespace xUnitTest
             var fraction3 = fraction1 + fraction2;
 
             fraction3.Should().Be(expFraction);
+        }
+
+        [Theory]
+        [InlineData(1, 2, 3, 5, -1, 10)]
+        [InlineData(-4, 3, 2, 5, -26, 15)]
+        [InlineData(-2, -3, 1, 3, 1, 3)]
+        public void MinusOperator_WithCorrectValues_ReturnCorrectValues(int firstNum, int firstDenum,
+            int secondEnum, int secondDenum, int expNum, int expDenum)
+        {
+            Fraction fraction1 = new(firstNum, firstDenum);
+            Fraction fraction2 = new(secondEnum, secondDenum);
+
+            Fraction expFraction = new(expNum, expDenum);
+            var fraction3 = fraction1 - fraction2;
+            fraction3.Should().Be(expFraction);
+        }
+
+        [Theory]
+        [InlineData(1, 2, 3, 5, 3, 10)]
+        [InlineData(-4, 3, 2, 5, -8, 15)]
+        [InlineData(-2, -3, 1, 3, 2, 9)]
+        public void MultiplyOperator_WithCorrectValues_ReturnCorrectValues(int firstNum, int firstDenum,
+            int secondEnum, int secondDenum, int expNum, int expDenum)
+        {
+            Fraction fraction1 = new(firstNum, firstDenum);
+            Fraction fraction2 = new(secondEnum, secondDenum);
+
+            Fraction expFraction = new(expNum, expDenum);
+            var fraction3 = fraction1 * fraction2;
+            fraction3.Should().Be(expFraction);
+        }
+
+        [Theory]
+        [InlineData(1, 2, 3, 5, 5, 6)]
+        [InlineData(-4, 3, 2, 5, -20, 6)]
+        [InlineData(-2, -3, 1, 3, 2, 1)]
+        public void DividedOperator_WithCorrectValues_ReturnCorrectValues(int firstNum, int firstDenum,
+            int secondEnum, int secondDenum, int expNum, int expDenum)
+        {
+            Fraction fraction1 = new(firstNum, firstDenum);
+            Fraction fraction2 = new(secondEnum, secondDenum);
+
+            Fraction expFraction = new(expNum, expDenum);
+            var fraction3 = fraction1 / fraction2;
+            fraction3.Should().Be(expFraction);
+        }
+
+        [Theory]
+        [InlineData(3, 0, 2, 7)]
+        [InlineData(3, 2, 2, 0)]
+        public void DividedOperator_WithUncorrectValues_ThrowException(int firstNum, int firstDenum,
+            int secondEnum, int secondDenum)
+        {
+            Assert.Throws<DivideByZeroException>(() =>
+            {
+                Fraction fraction1 = new(firstNum, firstDenum);
+                Fraction fraction2 = new(secondEnum, secondDenum);
+                var fraction3 = fraction1 / fraction2;
+            });
         }
     }
 }
