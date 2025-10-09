@@ -18,8 +18,8 @@ namespace WpfTest
             var loginInput = window?.FindFirstDescendant(cf => cf.ByAutomationId("LoginTextBox")).AsTextBox();
             var passwordInput = window?.FindFirstDescendant(cf => cf.ByAutomationId("PasswordBox")).AsTextBox();
 
-            loginInput?.Text = "unCorrect";
-            passwordInput?.Text = "unCorrect";
+            loginInput.Text = "unCorrect";
+            passwordInput.Text = "unCorrect";
 
             button?.Invoke();
 
@@ -45,8 +45,8 @@ namespace WpfTest
             var loginInput = window?.FindFirstDescendant(cf => cf.ByAutomationId("LoginTextBox")).AsTextBox();
             var passwordInput = window?.FindFirstDescendant(cf => cf.ByAutomationId("PasswordBox")).AsTextBox();
 
-            loginInput?.Text = "kloshi";
-            passwordInput?.Text = "unCorrect";
+            loginInput.Text = "kloshi";
+            passwordInput.Text = "unCorrect";
 
             button?.Invoke();
 
@@ -63,7 +63,7 @@ namespace WpfTest
         }
 
         [Fact]
-        public async Task SignIn_InputCorrectLoginPassword_OpenWelcomePage()
+        public async Task SignIn_InputCorrectUserLoginPassword_OpenWelcomePageUserRole()
         {
             var window = _fixture.Application.GetMainWindow(_fixture.Automation);
 
@@ -71,8 +71,8 @@ namespace WpfTest
             var loginInput = window?.FindFirstDescendant(cf => cf.ByAutomationId("LoginTextBox")).AsTextBox();
             var passwordInput = window?.FindFirstDescendant(cf => cf.ByAutomationId("PasswordBox")).AsTextBox();
 
-            loginInput?.Text = "circoniy";
-            passwordInput?.Text = "12345";
+            loginInput.Text = "circoniy";
+            passwordInput.Text = "12345";
 
             button?.Invoke();
 
@@ -82,6 +82,32 @@ namespace WpfTest
 
             await Task.Delay(250);
             window?.CaptureToFile("test_1.png");
+            await Task.Delay(250);
+
+            var backButton = window?.FindFirstDescendant(cf => cf.ByAutomationId("BrowseBack")).AsButton();
+            backButton?.Invoke();
+        }
+
+        [Fact]
+        public async Task SignIn_InputCorrectAdministatorLoginPassword_OpenWelcomePageAdministatorRole()
+        {
+            var window = _fixture.Application.GetMainWindow(_fixture.Automation);
+
+            var button = window?.FindFirstDescendant(cf => cf.ByAutomationId("SignInButton")).AsButton();
+            var loginInput = window?.FindFirstDescendant(cf => cf.ByAutomationId("LoginTextBox")).AsTextBox();
+            var passwordInput = window?.FindFirstDescendant(cf => cf.ByAutomationId("PasswordBox")).AsTextBox();
+
+            loginInput.Text = "admin";
+            passwordInput.Text = "admin";
+
+            button?.Invoke();
+
+            var welcomeLabel = window?.FindFirstDescendant(cf => cf.ByAutomationId("WelcomeTextBlock")).AsLabel();
+
+            welcomeLabel?.Text.Should().Be($"Добро пожаловать, admin, Ваша роль - Administator");
+
+            await Task.Delay(250);
+            window?.CaptureToFile("test_4.png");
             await Task.Delay(250);
 
             var backButton = window?.FindFirstDescendant(cf => cf.ByAutomationId("BrowseBack")).AsButton();
