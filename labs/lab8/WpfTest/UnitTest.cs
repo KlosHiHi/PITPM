@@ -7,8 +7,7 @@ namespace WpfTest
     public partial class UnitTest(UITestsFixture fixture) : IClassFixture<UITestsFixture>
     {
         private UITestsFixture _fixture = fixture;
-
-
+                
         [Fact]
         public async Task SignIn_InputUnCorrectPasswordLogin_ShowMessageBox()
         {
@@ -18,8 +17,8 @@ namespace WpfTest
             var loginInput = window?.FindFirstDescendant(cf => cf.ByAutomationId("LoginTextBox")).AsTextBox();
             var passwordInput = window?.FindFirstDescendant(cf => cf.ByAutomationId("PasswordBox")).AsTextBox();
 
-            loginInput.Text = "unCorrect";
-            passwordInput.Text = "unCorrect";
+            loginInput?.Text = "unCorrect";
+            passwordInput?.Text = "unCorrect";
 
             button?.Invoke();
 
@@ -37,6 +36,32 @@ namespace WpfTest
         }
 
         [Fact]
+        public async Task SignIn_WithOutInputData_ShowMessageBox()
+        {
+            var window = _fixture.Application.GetMainWindow(_fixture.Automation);
+
+            var button = window?.FindFirstDescendant(cf => cf.ByAutomationId("SignInButton")).AsButton();
+            var loginInput = window?.FindFirstDescendant(cf => cf.ByAutomationId("LoginTextBox")).AsTextBox();
+            var passwordInput = window?.FindFirstDescendant(cf => cf.ByAutomationId("PasswordBox")).AsTextBox();
+
+            loginInput?.Text = "";
+            passwordInput?.Text = "";
+
+            button?.Invoke();
+
+            var mesBoxText = window?.FindFirstDescendant(cf => cf.ByAutomationId("65536")).AsLabel();
+            var mesBoxButton = window?.FindFirstDescendant(cf => cf.ByAutomationId("2")).AsButton();
+
+            await Task.Delay(250);
+            window?.CaptureToFile("test_5.png");
+            await Task.Delay(250);
+
+            mesBoxText?.Text.Should().Be("Пользователь с таким логином не зарегистрирован.");
+
+            mesBoxButton?.Invoke();
+        }
+
+        [Fact]
         public async Task SignIn_InputCorrectLoginUnCorrectPassword_ShowMessageBox()
         {
             var window = _fixture.Application.GetMainWindow(_fixture.Automation);
@@ -45,8 +70,8 @@ namespace WpfTest
             var loginInput = window?.FindFirstDescendant(cf => cf.ByAutomationId("LoginTextBox")).AsTextBox();
             var passwordInput = window?.FindFirstDescendant(cf => cf.ByAutomationId("PasswordBox")).AsTextBox();
 
-            loginInput.Text = "kloshi";
-            passwordInput.Text = "unCorrect";
+            loginInput?.Text = "kloshi";
+            passwordInput?.Text = "unCorrect";
 
             button?.Invoke();
 
@@ -71,8 +96,8 @@ namespace WpfTest
             var loginInput = window?.FindFirstDescendant(cf => cf.ByAutomationId("LoginTextBox")).AsTextBox();
             var passwordInput = window?.FindFirstDescendant(cf => cf.ByAutomationId("PasswordBox")).AsTextBox();
 
-            loginInput.Text = "circoniy";
-            passwordInput.Text = "12345";
+            loginInput?.Text = "circoniy";
+            passwordInput?.Text = "12345";
 
             button?.Invoke();
 
@@ -97,8 +122,8 @@ namespace WpfTest
             var loginInput = window?.FindFirstDescendant(cf => cf.ByAutomationId("LoginTextBox")).AsTextBox();
             var passwordInput = window?.FindFirstDescendant(cf => cf.ByAutomationId("PasswordBox")).AsTextBox();
 
-            loginInput.Text = "admin";
-            passwordInput.Text = "admin";
+            loginInput?.Text = "admin";
+            passwordInput?.Text = "admin";
 
             button?.Invoke();
 
@@ -113,5 +138,6 @@ namespace WpfTest
             var backButton = window?.FindFirstDescendant(cf => cf.ByAutomationId("BrowseBack")).AsButton();
             backButton?.Invoke();
         }
+
     }
 }
