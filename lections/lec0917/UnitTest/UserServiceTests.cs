@@ -28,7 +28,7 @@ namespace UnitTest
             UserService service = new(_fixture.mockRepository.Object);
 
             var user = service.GetUser(1);
-
+            
             user.Should().NotBeNull();
             user.Name.Should().Be("Test");
         }
