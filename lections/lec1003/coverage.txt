@@ -1,7 +1,0 @@
-dotnet tool install --global dotnet-reportgenerator-globaltool
-
-dotnet test --collect:"XPlat Code Coverage" - создание отчёта
-
-reportgenerator -reports:"Путь\до\отчёта\{guid}\coverage.cobertura.xml" -targetdir:"Путь\для\результата"
-
-reportgenerator -reports:"\coverage.cobertura.xml" -targetdir:"coveragereport"
