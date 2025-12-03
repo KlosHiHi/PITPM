@@ -1,0 +1,140 @@
+meta {
+  name: GetWeatherForecast
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/WeatherForecast
+  body: none
+  auth: inherit
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/WeatherForecast
+    method: GET
+    mode: none
+  }
+  
+  response: {
+    headers: {
+      Content-Type: text/plain
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+        [
+          {
+            "date": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dayOfWeek": 0,
+              "dayOfYear": 0,
+              "dayNumber": 0
+            },
+            "temperatureC": 0,
+            "temperatureF": 0,
+            "summary": ""
+          }
+        ]
+      '''
+    }
+  }
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/WeatherForecast
+    method: GET
+    mode: none
+  }
+  
+  response: {
+    headers: {
+      Content-Type: application/json
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        [
+          {
+            "date": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dayOfWeek": 0,
+              "dayOfYear": 0,
+              "dayNumber": 0
+            },
+            "temperatureC": 0,
+            "temperatureF": 0,
+            "summary": ""
+          }
+        ]
+      '''
+    }
+  }
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/WeatherForecast
+    method: GET
+    mode: none
+  }
+  
+  response: {
+    headers: {
+      Content-Type: text/json
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        [
+          {
+            "date": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dayOfWeek": 0,
+              "dayOfYear": 0,
+              "dayNumber": 0
+            },
+            "temperatureC": 0,
+            "temperatureF": 0,
+            "summary": ""
+          }
+        ]
+      '''
+    }
+  }
+}
