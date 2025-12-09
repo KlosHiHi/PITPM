@@ -1,0 +1,27 @@
+{
+  "api/FractionLib.Fraction.html": {
+    "href": "api/FractionLib.Fraction.html",
+    "title": "Struct Fraction | Fraction",
+    "summary": "Struct Fraction Namespace FractionLib Assembly FractionLib.dll Обыкновенная дробь public readonly struct Fraction : IEquatable<Fraction> Implements IEquatable<Fraction> Inherited Members object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Constructors Fraction(int, int) Конструктор, с автоматическим упрощением public Fraction(int numerator, int denominator) Parameters numerator int числитель denominator int знаменатель Exceptions DivideByZeroException Знаменатель равен нулю Properties Denominator Знаменатель public int Denominator { get; } Property Value int Numerator Числитель public int Numerator { get; } Property Value int Methods Equals(Fraction) Indicates whether the current object is equal to another object of the same type. public bool Equals(Fraction other) Parameters other Fraction An object to compare with this object. Returns bool true if the current object is equal to the other parameter; otherwise, false. Equals(object?) Indicates whether this instance and a specified object are equal. public override bool Equals(object? obj) Parameters obj object The object to compare with the current instance. Returns bool true if obj and this instance are the same type and represent the same value; otherwise, false. GetHashCode() Returns the hash code for this instance. public override int GetHashCode() Returns int A 32-bit signed integer that is the hash code for this instance. ToDouble() public double ToDouble() Returns double ToString() Returns the fully qualified type name of this instance. public override string ToString() Returns string The fully qualified type name. Operators operator +(Fraction, Fraction) public static Fraction operator +(Fraction a, Fraction b) Parameters a Fraction b Fraction Returns Fraction operator /(Fraction, Fraction) public static Fraction operator /(Fraction a, Fraction b) Parameters a Fraction b Fraction Returns Fraction operator *(Fraction, Fraction) public static Fraction operator *(Fraction a, Fraction b) Parameters a Fraction b Fraction Returns Fraction operator -(Fraction, Fraction) public static Fraction operator -(Fraction a, Fraction b) Parameters a Fraction b Fraction Returns Fraction"
+  },
+  "api/FractionLib.html": {
+    "href": "api/FractionLib.html",
+    "title": "Namespace FractionLib | Fraction",
+    "summary": "Namespace FractionLib Structs Fraction Обыкновенная дробь"
+  },
+  "docs/getting-started.html": {
+    "href": "docs/getting-started.html",
+    "title": "Getting Started | Fraction",
+    "summary": "Getting Started"
+  },
+  "docs/introduction.html": {
+    "href": "docs/introduction.html",
+    "title": "Introduction | Fraction",
+    "summary": "Introduction"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "This is the HOMEPAGE. | Fraction",
+    "summary": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+  }
+}

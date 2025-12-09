@@ -1,0 +1,16 @@
+{
+  "FractionLib": "FractionLib.yml",
+  "FractionLib.Fraction": "FractionLib.Fraction.yml",
+  "FractionLib.Fraction.#ctor(System.Int32,System.Int32)": "FractionLib.Fraction.yml",
+  "FractionLib.Fraction.Denominator": "FractionLib.Fraction.yml",
+  "FractionLib.Fraction.Equals(FractionLib.Fraction)": "FractionLib.Fraction.yml",
+  "FractionLib.Fraction.Equals(System.Object)": "FractionLib.Fraction.yml",
+  "FractionLib.Fraction.GetHashCode": "FractionLib.Fraction.yml",
+  "FractionLib.Fraction.Numerator": "FractionLib.Fraction.yml",
+  "FractionLib.Fraction.ToDouble": "FractionLib.Fraction.yml",
+  "FractionLib.Fraction.ToString": "FractionLib.Fraction.yml",
+  "FractionLib.Fraction.op_Addition(FractionLib.Fraction,FractionLib.Fraction)": "FractionLib.Fraction.yml",
+  "FractionLib.Fraction.op_Division(FractionLib.Fraction,FractionLib.Fraction)": "FractionLib.Fraction.yml",
+  "FractionLib.Fraction.op_Multiply(FractionLib.Fraction,FractionLib.Fraction)": "FractionLib.Fraction.yml",
+  "FractionLib.Fraction.op_Subtraction(FractionLib.Fraction,FractionLib.Fraction)": "FractionLib.Fraction.yml"
+}

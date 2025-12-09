@@ -1,0 +1,967 @@
+### YamlMime:ManagedReference
+items:
+- uid: FractionLib.Fraction
+  commentId: T:FractionLib.Fraction
+  id: Fraction
+  parent: FractionLib
+  children:
+  - FractionLib.Fraction.#ctor(System.Int32,System.Int32)
+  - FractionLib.Fraction.Denominator
+  - FractionLib.Fraction.Equals(FractionLib.Fraction)
+  - FractionLib.Fraction.Equals(System.Object)
+  - FractionLib.Fraction.GetHashCode
+  - FractionLib.Fraction.Numerator
+  - FractionLib.Fraction.ToDouble
+  - FractionLib.Fraction.ToString
+  - FractionLib.Fraction.op_Addition(FractionLib.Fraction,FractionLib.Fraction)
+  - FractionLib.Fraction.op_Division(FractionLib.Fraction,FractionLib.Fraction)
+  - FractionLib.Fraction.op_Multiply(FractionLib.Fraction,FractionLib.Fraction)
+  - FractionLib.Fraction.op_Subtraction(FractionLib.Fraction,FractionLib.Fraction)
+  langs:
+  - csharp
+  - vb
+  name: Fraction
+  nameWithType: Fraction
+  fullName: FractionLib.Fraction
+  type: Struct
+  source:
+    remote:
+      path: FractionLib/Fraction.cs
+      branch: main
+      repo: https://github.com/ReyRom-Edu/UnitTesting.git
+    id: Fraction
+    path: ../FractionLib/Fraction.cs
+    startLine: 7
+  assemblies:
+  - FractionLib
+  namespace: FractionLib
+  summary: Обыкновенная дробь
+  example: []
+  syntax:
+    content: 'public readonly struct Fraction : IEquatable<Fraction>'
+    content.vb: Public Structure Fraction Implements IEquatable(Of Fraction)
+  implements:
+  - System.IEquatable{FractionLib.Fraction}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: FractionLib.Fraction.Numerator
+  commentId: P:FractionLib.Fraction.Numerator
+  id: Numerator
+  parent: FractionLib.Fraction
+  langs:
+  - csharp
+  - vb
+  name: Numerator
+  nameWithType: Fraction.Numerator
+  fullName: FractionLib.Fraction.Numerator
+  type: Property
+  source:
+    remote:
+      path: FractionLib/Fraction.cs
+      branch: main
+      repo: https://github.com/ReyRom-Edu/UnitTesting.git
+    id: Numerator
+    path: ../FractionLib/Fraction.cs
+    startLine: 12
+  assemblies:
+  - FractionLib
+  namespace: FractionLib
+  summary: Числитель
+  example: []
+  syntax:
+    content: public int Numerator { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Numerator As Integer
+  overload: FractionLib.Fraction.Numerator*
+- uid: FractionLib.Fraction.Denominator
+  commentId: P:FractionLib.Fraction.Denominator
+  id: Denominator
+  parent: FractionLib.Fraction
+  langs:
+  - csharp
+  - vb
+  name: Denominator
+  nameWithType: Fraction.Denominator
+  fullName: FractionLib.Fraction.Denominator
+  type: Property
+  source:
+    remote:
+      path: FractionLib/Fraction.cs
+      branch: main
+      repo: https://github.com/ReyRom-Edu/UnitTesting.git
+    id: Denominator
+    path: ../FractionLib/Fraction.cs
+    startLine: 16
+  assemblies:
+  - FractionLib
+  namespace: FractionLib
+  summary: Знаменатель
+  example: []
+  syntax:
+    content: public int Denominator { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Denominator As Integer
+  overload: FractionLib.Fraction.Denominator*
+- uid: FractionLib.Fraction.#ctor(System.Int32,System.Int32)
+  commentId: M:FractionLib.Fraction.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: FractionLib.Fraction
+  langs:
+  - csharp
+  - vb
+  name: Fraction(int, int)
+  nameWithType: Fraction.Fraction(int, int)
+  fullName: FractionLib.Fraction.Fraction(int, int)
+  type: Constructor
+  source:
+    remote:
+      path: FractionLib/Fraction.cs
+      branch: main
+      repo: https://github.com/ReyRom-Edu/UnitTesting.git
+    id: .ctor
+    path: ../FractionLib/Fraction.cs
+    startLine: 24
+  assemblies:
+  - FractionLib
+  namespace: FractionLib
+  summary: Конструктор, с автоматическим упрощением
+  example: []
+  syntax:
+    content: public Fraction(int numerator, int denominator)
+    parameters:
+    - id: numerator
+      type: System.Int32
+      description: числитель
+    - id: denominator
+      type: System.Int32
+      description: знаменатель
+    content.vb: Public Sub New(numerator As Integer, denominator As Integer)
+  overload: FractionLib.Fraction.#ctor*
+  exceptions:
+  - type: System.DivideByZeroException
+    commentId: T:System.DivideByZeroException
+    description: Знаменатель равен нулю
+  nameWithType.vb: Fraction.New(Integer, Integer)
+  fullName.vb: FractionLib.Fraction.New(Integer, Integer)
+  name.vb: New(Integer, Integer)
+- uid: FractionLib.Fraction.op_Addition(FractionLib.Fraction,FractionLib.Fraction)
+  commentId: M:FractionLib.Fraction.op_Addition(FractionLib.Fraction,FractionLib.Fraction)
+  id: op_Addition(FractionLib.Fraction,FractionLib.Fraction)
+  parent: FractionLib.Fraction
+  langs:
+  - csharp
+  - vb
+  name: operator +(Fraction, Fraction)
+  nameWithType: Fraction.operator +(Fraction, Fraction)
+  fullName: FractionLib.Fraction.operator +(FractionLib.Fraction, FractionLib.Fraction)
+  type: Operator
+  source:
+    remote:
+      path: FractionLib/Fraction.cs
+      branch: main
+      repo: https://github.com/ReyRom-Edu/UnitTesting.git
+    id: op_Addition
+    path: ../FractionLib/Fraction.cs
+    startLine: 43
+  assemblies:
+  - FractionLib
+  namespace: FractionLib
+  syntax:
+    content: public static Fraction operator +(Fraction a, Fraction b)
+    parameters:
+    - id: a
+      type: FractionLib.Fraction
+    - id: b
+      type: FractionLib.Fraction
+    return:
+      type: FractionLib.Fraction
+    content.vb: Public Shared Operator +(a As Fraction, b As Fraction) As Fraction
+  overload: FractionLib.Fraction.op_Addition*
+  nameWithType.vb: Fraction.+(Fraction, Fraction)
+  fullName.vb: FractionLib.Fraction.+(FractionLib.Fraction, FractionLib.Fraction)
+  name.vb: +(Fraction, Fraction)
+- uid: FractionLib.Fraction.op_Subtraction(FractionLib.Fraction,FractionLib.Fraction)
+  commentId: M:FractionLib.Fraction.op_Subtraction(FractionLib.Fraction,FractionLib.Fraction)
+  id: op_Subtraction(FractionLib.Fraction,FractionLib.Fraction)
+  parent: FractionLib.Fraction
+  langs:
+  - csharp
+  - vb
+  name: operator -(Fraction, Fraction)
+  nameWithType: Fraction.operator -(Fraction, Fraction)
+  fullName: FractionLib.Fraction.operator -(FractionLib.Fraction, FractionLib.Fraction)
+  type: Operator
+  source:
+    remote:
+      path: FractionLib/Fraction.cs
+      branch: main
+      repo: https://github.com/ReyRom-Edu/UnitTesting.git
+    id: op_Subtraction
+    path: ../FractionLib/Fraction.cs
+    startLine: 47
+  assemblies:
+  - FractionLib
+  namespace: FractionLib
+  syntax:
+    content: public static Fraction operator -(Fraction a, Fraction b)
+    parameters:
+    - id: a
+      type: FractionLib.Fraction
+    - id: b
+      type: FractionLib.Fraction
+    return:
+      type: FractionLib.Fraction
+    content.vb: Public Shared Operator -(a As Fraction, b As Fraction) As Fraction
+  overload: FractionLib.Fraction.op_Subtraction*
+  nameWithType.vb: Fraction.-(Fraction, Fraction)
+  fullName.vb: FractionLib.Fraction.-(FractionLib.Fraction, FractionLib.Fraction)
+  name.vb: -(Fraction, Fraction)
+- uid: FractionLib.Fraction.op_Multiply(FractionLib.Fraction,FractionLib.Fraction)
+  commentId: M:FractionLib.Fraction.op_Multiply(FractionLib.Fraction,FractionLib.Fraction)
+  id: op_Multiply(FractionLib.Fraction,FractionLib.Fraction)
+  parent: FractionLib.Fraction
+  langs:
+  - csharp
+  - vb
+  name: operator *(Fraction, Fraction)
+  nameWithType: Fraction.operator *(Fraction, Fraction)
+  fullName: FractionLib.Fraction.operator *(FractionLib.Fraction, FractionLib.Fraction)
+  type: Operator
+  source:
+    remote:
+      path: FractionLib/Fraction.cs
+      branch: main
+      repo: https://github.com/ReyRom-Edu/UnitTesting.git
+    id: op_Multiply
+    path: ../FractionLib/Fraction.cs
+    startLine: 51
+  assemblies:
+  - FractionLib
+  namespace: FractionLib
+  syntax:
+    content: public static Fraction operator *(Fraction a, Fraction b)
+    parameters:
+    - id: a
+      type: FractionLib.Fraction
+    - id: b
+      type: FractionLib.Fraction
+    return:
+      type: FractionLib.Fraction
+    content.vb: Public Shared Operator *(a As Fraction, b As Fraction) As Fraction
+  overload: FractionLib.Fraction.op_Multiply*
+  nameWithType.vb: Fraction.*(Fraction, Fraction)
+  fullName.vb: FractionLib.Fraction.*(FractionLib.Fraction, FractionLib.Fraction)
+  name.vb: '*(Fraction, Fraction)'
+- uid: FractionLib.Fraction.op_Division(FractionLib.Fraction,FractionLib.Fraction)
+  commentId: M:FractionLib.Fraction.op_Division(FractionLib.Fraction,FractionLib.Fraction)
+  id: op_Division(FractionLib.Fraction,FractionLib.Fraction)
+  parent: FractionLib.Fraction
+  langs:
+  - csharp
+  - vb
+  name: operator /(Fraction, Fraction)
+  nameWithType: Fraction.operator /(Fraction, Fraction)
+  fullName: FractionLib.Fraction.operator /(FractionLib.Fraction, FractionLib.Fraction)
+  type: Operator
+  source:
+    remote:
+      path: FractionLib/Fraction.cs
+      branch: main
+      repo: https://github.com/ReyRom-Edu/UnitTesting.git
+    id: op_Division
+    path: ../FractionLib/Fraction.cs
+    startLine: 54
+  assemblies:
+  - FractionLib
+  namespace: FractionLib
+  syntax:
+    content: public static Fraction operator /(Fraction a, Fraction b)
+    parameters:
+    - id: a
+      type: FractionLib.Fraction
+    - id: b
+      type: FractionLib.Fraction
+    return:
+      type: FractionLib.Fraction
+    content.vb: Public Shared Operator /(a As Fraction, b As Fraction) As Fraction
+  overload: FractionLib.Fraction.op_Division*
+  nameWithType.vb: Fraction./(Fraction, Fraction)
+  fullName.vb: FractionLib.Fraction./(FractionLib.Fraction, FractionLib.Fraction)
+  name.vb: /(Fraction, Fraction)
+- uid: FractionLib.Fraction.ToDouble
+  commentId: M:FractionLib.Fraction.ToDouble
+  id: ToDouble
+  parent: FractionLib.Fraction
+  langs:
+  - csharp
+  - vb
+  name: ToDouble()
+  nameWithType: Fraction.ToDouble()
+  fullName: FractionLib.Fraction.ToDouble()
+  type: Method
+  source:
+    remote:
+      path: FractionLib/Fraction.cs
+      branch: main
+      repo: https://github.com/ReyRom-Edu/UnitTesting.git
+    id: ToDouble
+    path: ../FractionLib/Fraction.cs
+    startLine: 62
+  assemblies:
+  - FractionLib
+  namespace: FractionLib
+  syntax:
+    content: public double ToDouble()
+    return:
+      type: System.Double
+    content.vb: Public Function ToDouble() As Double
+  overload: FractionLib.Fraction.ToDouble*
+- uid: FractionLib.Fraction.ToString
+  commentId: M:FractionLib.Fraction.ToString
+  id: ToString
+  parent: FractionLib.Fraction
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Fraction.ToString()
+  fullName: FractionLib.Fraction.ToString()
+  type: Method
+  source:
+    remote:
+      path: FractionLib/Fraction.cs
+      branch: main
+      repo: https://github.com/ReyRom-Edu/UnitTesting.git
+    id: ToString
+    path: ../FractionLib/Fraction.cs
+    startLine: 64
+  assemblies:
+  - FractionLib
+  namespace: FractionLib
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: FractionLib.Fraction.ToString*
+- uid: FractionLib.Fraction.Equals(FractionLib.Fraction)
+  commentId: M:FractionLib.Fraction.Equals(FractionLib.Fraction)
+  id: Equals(FractionLib.Fraction)
+  parent: FractionLib.Fraction
+  langs:
+  - csharp
+  - vb
+  name: Equals(Fraction)
+  nameWithType: Fraction.Equals(Fraction)
+  fullName: FractionLib.Fraction.Equals(FractionLib.Fraction)
+  type: Method
+  source:
+    remote:
+      path: FractionLib/Fraction.cs
+      branch: main
+      repo: https://github.com/ReyRom-Edu/UnitTesting.git
+    id: Equals
+    path: ../FractionLib/Fraction.cs
+    startLine: 66
+  assemblies:
+  - FractionLib
+  namespace: FractionLib
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(Fraction other)
+    parameters:
+    - id: other
+      type: FractionLib.Fraction
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function Equals(other As Fraction) As Boolean
+  overload: FractionLib.Fraction.Equals*
+  implements:
+  - System.IEquatable{FractionLib.Fraction}.Equals(FractionLib.Fraction)
+- uid: FractionLib.Fraction.Equals(System.Object)
+  commentId: M:FractionLib.Fraction.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: FractionLib.Fraction
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: Fraction.Equals(object?)
+  fullName: FractionLib.Fraction.Equals(object?)
+  type: Method
+  source:
+    remote:
+      path: FractionLib/Fraction.cs
+      branch: main
+      repo: https://github.com/ReyRom-Edu/UnitTesting.git
+    id: Equals
+    path: ../FractionLib/Fraction.cs
+    startLine: 69
+  assemblies:
+  - FractionLib
+  namespace: FractionLib
+  summary: Indicates whether this instance and a specified object are equal.
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current instance.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: FractionLib.Fraction.Equals*
+  nameWithType.vb: Fraction.Equals(Object)
+  fullName.vb: FractionLib.Fraction.Equals(Object)
+  name.vb: Equals(Object)
+- uid: FractionLib.Fraction.GetHashCode
+  commentId: M:FractionLib.Fraction.GetHashCode
+  id: GetHashCode
+  parent: FractionLib.Fraction
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Fraction.GetHashCode()
+  fullName: FractionLib.Fraction.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: FractionLib/Fraction.cs
+      branch: main
+      repo: https://github.com/ReyRom-Edu/UnitTesting.git
+    id: GetHashCode
+    path: ../FractionLib/Fraction.cs
+    startLine: 73
+  assemblies:
+  - FractionLib
+  namespace: FractionLib
+  summary: Returns the hash code for this instance.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that is the hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: FractionLib.Fraction.GetHashCode*
+references:
+- uid: FractionLib
+  commentId: N:FractionLib
+  href: FractionLib.html
+  name: FractionLib
+  nameWithType: FractionLib
+  fullName: FractionLib
+- uid: System.IEquatable{FractionLib.Fraction}
+  commentId: T:System.IEquatable{FractionLib.Fraction}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Fraction>
+  nameWithType: IEquatable<Fraction>
+  fullName: System.IEquatable<FractionLib.Fraction>
+  nameWithType.vb: IEquatable(Of Fraction)
+  fullName.vb: System.IEquatable(Of FractionLib.Fraction)
+  name.vb: IEquatable(Of Fraction)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: FractionLib.Fraction
+    name: Fraction
+    href: FractionLib.Fraction.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: FractionLib.Fraction
+    name: Fraction
+    href: FractionLib.Fraction.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: FractionLib.Fraction.Numerator*
+  commentId: Overload:FractionLib.Fraction.Numerator
+  href: FractionLib.Fraction.html#FractionLib_Fraction_Numerator
+  name: Numerator
+  nameWithType: Fraction.Numerator
+  fullName: FractionLib.Fraction.Numerator
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: FractionLib.Fraction.Denominator*
+  commentId: Overload:FractionLib.Fraction.Denominator
+  href: FractionLib.Fraction.html#FractionLib_Fraction_Denominator
+  name: Denominator
+  nameWithType: Fraction.Denominator
+  fullName: FractionLib.Fraction.Denominator
+- uid: System.DivideByZeroException
+  commentId: T:System.DivideByZeroException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.dividebyzeroexception
+  name: DivideByZeroException
+  nameWithType: DivideByZeroException
+  fullName: System.DivideByZeroException
+- uid: FractionLib.Fraction.#ctor*
+  commentId: Overload:FractionLib.Fraction.#ctor
+  href: FractionLib.Fraction.html#FractionLib_Fraction__ctor_System_Int32_System_Int32_
+  name: Fraction
+  nameWithType: Fraction.Fraction
+  fullName: FractionLib.Fraction.Fraction
+  nameWithType.vb: Fraction.New
+  fullName.vb: FractionLib.Fraction.New
+  name.vb: New
+- uid: FractionLib.Fraction.op_Addition*
+  commentId: Overload:FractionLib.Fraction.op_Addition
+  href: FractionLib.Fraction.html#FractionLib_Fraction_op_Addition_FractionLib_Fraction_FractionLib_Fraction_
+  name: operator +
+  nameWithType: Fraction.operator +
+  fullName: FractionLib.Fraction.operator +
+  nameWithType.vb: Fraction.+
+  fullName.vb: FractionLib.Fraction.+
+  name.vb: +
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: FractionLib.Fraction.op_Addition*
+    name: +
+    href: FractionLib.Fraction.html#FractionLib_Fraction_op_Addition_FractionLib_Fraction_FractionLib_Fraction_
+- uid: FractionLib.Fraction
+  commentId: T:FractionLib.Fraction
+  parent: FractionLib
+  href: FractionLib.Fraction.html
+  name: Fraction
+  nameWithType: Fraction
+  fullName: FractionLib.Fraction
+- uid: FractionLib.Fraction.op_Subtraction*
+  commentId: Overload:FractionLib.Fraction.op_Subtraction
+  href: FractionLib.Fraction.html#FractionLib_Fraction_op_Subtraction_FractionLib_Fraction_FractionLib_Fraction_
+  name: operator -
+  nameWithType: Fraction.operator -
+  fullName: FractionLib.Fraction.operator -
+  nameWithType.vb: Fraction.-
+  fullName.vb: FractionLib.Fraction.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: FractionLib.Fraction.op_Subtraction*
+    name: '-'
+    href: FractionLib.Fraction.html#FractionLib_Fraction_op_Subtraction_FractionLib_Fraction_FractionLib_Fraction_
+- uid: FractionLib.Fraction.op_Multiply*
+  commentId: Overload:FractionLib.Fraction.op_Multiply
+  href: FractionLib.Fraction.html#FractionLib_Fraction_op_Multiply_FractionLib_Fraction_FractionLib_Fraction_
+  name: operator *
+  nameWithType: Fraction.operator *
+  fullName: FractionLib.Fraction.operator *
+  nameWithType.vb: Fraction.*
+  fullName.vb: FractionLib.Fraction.*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: FractionLib.Fraction.op_Multiply*
+    name: '*'
+    href: FractionLib.Fraction.html#FractionLib_Fraction_op_Multiply_FractionLib_Fraction_FractionLib_Fraction_
+- uid: FractionLib.Fraction.op_Division*
+  commentId: Overload:FractionLib.Fraction.op_Division
+  href: FractionLib.Fraction.html#FractionLib_Fraction_op_Division_FractionLib_Fraction_FractionLib_Fraction_
+  name: operator /
+  nameWithType: Fraction.operator /
+  fullName: FractionLib.Fraction.operator /
+  nameWithType.vb: Fraction./
+  fullName.vb: FractionLib.Fraction./
+  name.vb: /
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: FractionLib.Fraction.op_Division*
+    name: /
+    href: FractionLib.Fraction.html#FractionLib_Fraction_op_Division_FractionLib_Fraction_FractionLib_Fraction_
+- uid: FractionLib.Fraction.ToDouble*
+  commentId: Overload:FractionLib.Fraction.ToDouble
+  href: FractionLib.Fraction.html#FractionLib_Fraction_ToDouble
+  name: ToDouble
+  nameWithType: Fraction.ToDouble
+  fullName: FractionLib.Fraction.ToDouble
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: FractionLib.Fraction.ToString*
+  commentId: Overload:FractionLib.Fraction.ToString
+  href: FractionLib.Fraction.html#FractionLib_Fraction_ToString
+  name: ToString
+  nameWithType: Fraction.ToString
+  fullName: FractionLib.Fraction.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: FractionLib.Fraction.Equals*
+  commentId: Overload:FractionLib.Fraction.Equals
+  href: FractionLib.Fraction.html#FractionLib_Fraction_Equals_FractionLib_Fraction_
+  name: Equals
+  nameWithType: Fraction.Equals
+  fullName: FractionLib.Fraction.Equals
+- uid: System.IEquatable{FractionLib.Fraction}.Equals(FractionLib.Fraction)
+  commentId: M:System.IEquatable{FractionLib.Fraction}.Equals(FractionLib.Fraction)
+  parent: System.IEquatable{FractionLib.Fraction}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Fraction)
+  nameWithType: IEquatable<Fraction>.Equals(Fraction)
+  fullName: System.IEquatable<FractionLib.Fraction>.Equals(FractionLib.Fraction)
+  nameWithType.vb: IEquatable(Of Fraction).Equals(Fraction)
+  fullName.vb: System.IEquatable(Of FractionLib.Fraction).Equals(FractionLib.Fraction)
+  spec.csharp:
+  - uid: System.IEquatable{FractionLib.Fraction}.Equals(FractionLib.Fraction)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: FractionLib.Fraction
+    name: Fraction
+    href: FractionLib.Fraction.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{FractionLib.Fraction}.Equals(FractionLib.Fraction)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: FractionLib.Fraction
+    name: Fraction
+    href: FractionLib.Fraction.html
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: FractionLib.Fraction.GetHashCode*
+  commentId: Overload:FractionLib.Fraction.GetHashCode
+  href: FractionLib.Fraction.html#FractionLib_Fraction_GetHashCode
+  name: GetHashCode
+  nameWithType: Fraction.GetHashCode
+  fullName: FractionLib.Fraction.GetHashCode

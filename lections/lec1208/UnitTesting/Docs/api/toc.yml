@@ -1,0 +1,10 @@
+### YamlMime:TableOfContent
+items:
+- uid: FractionLib
+  name: FractionLib
+  type: Namespace
+  items:
+  - uid: FractionLib.Fraction
+    name: Fraction
+    type: Struct
+memberLayout: SamePage

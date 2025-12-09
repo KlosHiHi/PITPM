@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: FractionLib
+  commentId: N:FractionLib
+  id: FractionLib
+  children:
+  - FractionLib.Fraction
+  langs:
+  - csharp
+  - vb
+  name: FractionLib
+  nameWithType: FractionLib
+  fullName: FractionLib
+  type: Namespace
+  assemblies:
+  - FractionLib
+references:
+- uid: FractionLib.Fraction
+  commentId: T:FractionLib.Fraction
+  parent: FractionLib
+  href: FractionLib.Fraction.html
+  name: Fraction
+  nameWithType: Fraction
+  fullName: FractionLib.Fraction
+- uid: FractionLib
+  commentId: N:FractionLib
+  href: FractionLib.html
+  name: FractionLib
+  nameWithType: FractionLib
+  fullName: FractionLib

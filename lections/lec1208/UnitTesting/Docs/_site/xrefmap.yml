@@ -1,0 +1,197 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: FractionLib
+  name: FractionLib
+  href: api/FractionLib.html
+  commentId: N:FractionLib
+  fullName: FractionLib
+  nameWithType: FractionLib
+- uid: FractionLib.Fraction
+  name: Fraction
+  href: api/FractionLib.Fraction.html
+  commentId: T:FractionLib.Fraction
+  fullName: FractionLib.Fraction
+  nameWithType: Fraction
+- uid: FractionLib.Fraction.#ctor(System.Int32,System.Int32)
+  name: Fraction(int, int)
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction__ctor_System_Int32_System_Int32_
+  commentId: M:FractionLib.Fraction.#ctor(System.Int32,System.Int32)
+  name.vb: New(Integer, Integer)
+  fullName: FractionLib.Fraction.Fraction(int, int)
+  fullName.vb: FractionLib.Fraction.New(Integer, Integer)
+  nameWithType: Fraction.Fraction(int, int)
+  nameWithType.vb: Fraction.New(Integer, Integer)
+- uid: FractionLib.Fraction.#ctor*
+  name: Fraction
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction__ctor_
+  commentId: Overload:FractionLib.Fraction.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: FractionLib.Fraction.Fraction
+  fullName.vb: FractionLib.Fraction.New
+  nameWithType: Fraction.Fraction
+  nameWithType.vb: Fraction.New
+- uid: FractionLib.Fraction.Denominator
+  name: Denominator
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction_Denominator
+  commentId: P:FractionLib.Fraction.Denominator
+  fullName: FractionLib.Fraction.Denominator
+  nameWithType: Fraction.Denominator
+- uid: FractionLib.Fraction.Denominator*
+  name: Denominator
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction_Denominator_
+  commentId: Overload:FractionLib.Fraction.Denominator
+  isSpec: "True"
+  fullName: FractionLib.Fraction.Denominator
+  nameWithType: Fraction.Denominator
+- uid: FractionLib.Fraction.Equals(FractionLib.Fraction)
+  name: Equals(Fraction)
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction_Equals_FractionLib_Fraction_
+  commentId: M:FractionLib.Fraction.Equals(FractionLib.Fraction)
+  fullName: FractionLib.Fraction.Equals(FractionLib.Fraction)
+  nameWithType: Fraction.Equals(Fraction)
+- uid: FractionLib.Fraction.Equals(System.Object)
+  name: Equals(object?)
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction_Equals_System_Object_
+  commentId: M:FractionLib.Fraction.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: FractionLib.Fraction.Equals(object?)
+  fullName.vb: FractionLib.Fraction.Equals(Object)
+  nameWithType: Fraction.Equals(object?)
+  nameWithType.vb: Fraction.Equals(Object)
+- uid: FractionLib.Fraction.Equals*
+  name: Equals
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction_Equals_
+  commentId: Overload:FractionLib.Fraction.Equals
+  isSpec: "True"
+  fullName: FractionLib.Fraction.Equals
+  nameWithType: Fraction.Equals
+- uid: FractionLib.Fraction.GetHashCode
+  name: GetHashCode()
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction_GetHashCode
+  commentId: M:FractionLib.Fraction.GetHashCode
+  fullName: FractionLib.Fraction.GetHashCode()
+  nameWithType: Fraction.GetHashCode()
+- uid: FractionLib.Fraction.GetHashCode*
+  name: GetHashCode
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction_GetHashCode_
+  commentId: Overload:FractionLib.Fraction.GetHashCode
+  isSpec: "True"
+  fullName: FractionLib.Fraction.GetHashCode
+  nameWithType: Fraction.GetHashCode
+- uid: FractionLib.Fraction.Numerator
+  name: Numerator
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction_Numerator
+  commentId: P:FractionLib.Fraction.Numerator
+  fullName: FractionLib.Fraction.Numerator
+  nameWithType: Fraction.Numerator
+- uid: FractionLib.Fraction.Numerator*
+  name: Numerator
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction_Numerator_
+  commentId: Overload:FractionLib.Fraction.Numerator
+  isSpec: "True"
+  fullName: FractionLib.Fraction.Numerator
+  nameWithType: Fraction.Numerator
+- uid: FractionLib.Fraction.ToDouble
+  name: ToDouble()
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction_ToDouble
+  commentId: M:FractionLib.Fraction.ToDouble
+  fullName: FractionLib.Fraction.ToDouble()
+  nameWithType: Fraction.ToDouble()
+- uid: FractionLib.Fraction.ToDouble*
+  name: ToDouble
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction_ToDouble_
+  commentId: Overload:FractionLib.Fraction.ToDouble
+  isSpec: "True"
+  fullName: FractionLib.Fraction.ToDouble
+  nameWithType: Fraction.ToDouble
+- uid: FractionLib.Fraction.ToString
+  name: ToString()
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction_ToString
+  commentId: M:FractionLib.Fraction.ToString
+  fullName: FractionLib.Fraction.ToString()
+  nameWithType: Fraction.ToString()
+- uid: FractionLib.Fraction.ToString*
+  name: ToString
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction_ToString_
+  commentId: Overload:FractionLib.Fraction.ToString
+  isSpec: "True"
+  fullName: FractionLib.Fraction.ToString
+  nameWithType: Fraction.ToString
+- uid: FractionLib.Fraction.op_Addition(FractionLib.Fraction,FractionLib.Fraction)
+  name: operator +(Fraction, Fraction)
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction_op_Addition_FractionLib_Fraction_FractionLib_Fraction_
+  commentId: M:FractionLib.Fraction.op_Addition(FractionLib.Fraction,FractionLib.Fraction)
+  name.vb: +(Fraction, Fraction)
+  fullName: FractionLib.Fraction.operator +(FractionLib.Fraction, FractionLib.Fraction)
+  fullName.vb: FractionLib.Fraction.+(FractionLib.Fraction, FractionLib.Fraction)
+  nameWithType: Fraction.operator +(Fraction, Fraction)
+  nameWithType.vb: Fraction.+(Fraction, Fraction)
+- uid: FractionLib.Fraction.op_Addition*
+  name: operator +
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction_op_Addition_
+  commentId: Overload:FractionLib.Fraction.op_Addition
+  isSpec: "True"
+  name.vb: +
+  fullName: FractionLib.Fraction.operator +
+  fullName.vb: FractionLib.Fraction.+
+  nameWithType: Fraction.operator +
+  nameWithType.vb: Fraction.+
+- uid: FractionLib.Fraction.op_Division(FractionLib.Fraction,FractionLib.Fraction)
+  name: operator /(Fraction, Fraction)
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction_op_Division_FractionLib_Fraction_FractionLib_Fraction_
+  commentId: M:FractionLib.Fraction.op_Division(FractionLib.Fraction,FractionLib.Fraction)
+  name.vb: /(Fraction, Fraction)
+  fullName: FractionLib.Fraction.operator /(FractionLib.Fraction, FractionLib.Fraction)
+  fullName.vb: FractionLib.Fraction./(FractionLib.Fraction, FractionLib.Fraction)
+  nameWithType: Fraction.operator /(Fraction, Fraction)
+  nameWithType.vb: Fraction./(Fraction, Fraction)
+- uid: FractionLib.Fraction.op_Division*
+  name: operator /
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction_op_Division_
+  commentId: Overload:FractionLib.Fraction.op_Division
+  isSpec: "True"
+  name.vb: /
+  fullName: FractionLib.Fraction.operator /
+  fullName.vb: FractionLib.Fraction./
+  nameWithType: Fraction.operator /
+  nameWithType.vb: Fraction./
+- uid: FractionLib.Fraction.op_Multiply(FractionLib.Fraction,FractionLib.Fraction)
+  name: operator *(Fraction, Fraction)
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction_op_Multiply_FractionLib_Fraction_FractionLib_Fraction_
+  commentId: M:FractionLib.Fraction.op_Multiply(FractionLib.Fraction,FractionLib.Fraction)
+  name.vb: '*(Fraction, Fraction)'
+  fullName: FractionLib.Fraction.operator *(FractionLib.Fraction, FractionLib.Fraction)
+  fullName.vb: FractionLib.Fraction.*(FractionLib.Fraction, FractionLib.Fraction)
+  nameWithType: Fraction.operator *(Fraction, Fraction)
+  nameWithType.vb: Fraction.*(Fraction, Fraction)
+- uid: FractionLib.Fraction.op_Multiply*
+  name: operator *
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction_op_Multiply_
+  commentId: Overload:FractionLib.Fraction.op_Multiply
+  isSpec: "True"
+  name.vb: '*'
+  fullName: FractionLib.Fraction.operator *
+  fullName.vb: FractionLib.Fraction.*
+  nameWithType: Fraction.operator *
+  nameWithType.vb: Fraction.*
+- uid: FractionLib.Fraction.op_Subtraction(FractionLib.Fraction,FractionLib.Fraction)
+  name: operator -(Fraction, Fraction)
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction_op_Subtraction_FractionLib_Fraction_FractionLib_Fraction_
+  commentId: M:FractionLib.Fraction.op_Subtraction(FractionLib.Fraction,FractionLib.Fraction)
+  name.vb: -(Fraction, Fraction)
+  fullName: FractionLib.Fraction.operator -(FractionLib.Fraction, FractionLib.Fraction)
+  fullName.vb: FractionLib.Fraction.-(FractionLib.Fraction, FractionLib.Fraction)
+  nameWithType: Fraction.operator -(Fraction, Fraction)
+  nameWithType.vb: Fraction.-(Fraction, Fraction)
+- uid: FractionLib.Fraction.op_Subtraction*
+  name: operator -
+  href: api/FractionLib.Fraction.html#FractionLib_Fraction_op_Subtraction_
+  commentId: Overload:FractionLib.Fraction.op_Subtraction
+  isSpec: "True"
+  name.vb: '-'
+  fullName: FractionLib.Fraction.operator -
+  fullName.vb: FractionLib.Fraction.-
+  nameWithType: Fraction.operator -
+  nameWithType.vb: Fraction.-
