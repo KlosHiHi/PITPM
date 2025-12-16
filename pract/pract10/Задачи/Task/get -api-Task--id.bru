@@ -1,0 +1,180 @@
+meta {
+  name: get /api/Task/:id
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/api/Task/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+docs {
+  # Получение задачи по ID
+  
+  Эта конечная точка позволяет получить информацию о задаче по её уникальному идентификатору (ID).
+  
+  ### Параметры
+  - `id` (число, обязательный) — уникальный идентификатор задачи, которую необходимо получить.
+  
+  #### Успешный ответ (200 OK)
+  При успешном запросе возвращается объект задачи в формате JSON. Пример ответа:
+  
+  ```json
+  {
+    "id": 1,
+    "title": "Заголовок задачи",
+    "description": "Подробное описание задачи.",
+    "status": "выполнено",
+    "created\_at": "2022-12-01T12:00:00Z",
+    "updated\_at": "2022-12-16T12:00:00Z"
+  }
+  
+}
+
+example {
+  name: 200 Response
+  description: Успешное выполнение
+  
+  request: {
+    url: {{baseUrl}}/api/Task/:id
+    method: GET
+    mode: none
+    params:path: {
+      id: 
+    }
+  }
+  
+  response: {
+    headers: {
+      Content-Type: text/plain
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+        {
+          "taskId": 0,
+          "name": "",
+          "description": "",
+          "executionTime": "",
+          "status": 0
+        }
+      '''
+    }
+  }
+}
+
+example {
+  name: 200 Response
+  description: Успешное выполнение
+  
+  request: {
+    url: {{baseUrl}}/api/Task/:id
+    method: GET
+    mode: none
+    params:path: {
+      id: 
+    }
+  }
+  
+  response: {
+    headers: {
+      Content-Type: application/json
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        {
+          "taskId": 0,
+          "name": "",
+          "description": "",
+          "executionTime": "",
+          "status": 0
+        }
+      '''
+    }
+  }
+}
+
+example {
+  name: 200 Response
+  description: Успешное выполнение
+  
+  request: {
+    url: {{baseUrl}}/api/Task/:id
+    method: GET
+    mode: none
+    params:path: {
+      id: 
+    }
+  }
+  
+  response: {
+    headers: {
+      Content-Type: text/json
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        {
+          "taskId": 0,
+          "name": "",
+          "description": "",
+          "executionTime": "",
+          "status": 0
+        }
+      '''
+    }
+  }
+}
+
+example {
+  name: 404 Response
+  description: Объекта с указанные ID нет
+  
+  request: {
+    url: {{baseUrl}}/api/Task/:id
+    method: GET
+    mode: none
+    params:path: {
+      id: 
+    }
+  }
+  
+  response: {
+    status: {
+      code: 404
+      text: Not Found
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}

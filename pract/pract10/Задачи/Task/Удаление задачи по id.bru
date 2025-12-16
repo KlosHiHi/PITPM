@@ -1,0 +1,71 @@
+meta {
+  name: Удаление задачи по id
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/api/Task/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+example {
+  name: 200 Response
+  description: Объект удалён
+  
+  request: {
+    url: {{baseUrl}}/api/Task/:id
+    method: DELETE
+    mode: none
+    params:path: {
+      id: 
+    }
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}
+
+example {
+  name: 404 Response
+  description: Объекта с указанным Id нет в списке
+  
+  request: {
+    url: {{baseUrl}}/api/Task/:id
+    method: DELETE
+    mode: none
+    params:path: {
+      id: 
+    }
+  }
+  
+  response: {
+    status: {
+      code: 404
+      text: Not Found
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}

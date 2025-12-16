@@ -1,0 +1,139 @@
+meta {
+  name: get /api/Task/:startDate&:endDate
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/api/Task/:startDate&:endDate
+  body: none
+  auth: inherit
+}
+
+params:path {
+  startDate: 
+  endDate: 
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/Task/:startDate&:endDate
+    method: GET
+    mode: none
+    params:path: {
+      startDate: 
+      endDate: 
+    }
+  }
+  
+  response: {
+    headers: {
+      Content-Type: text/plain
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+        [
+          {
+            "taskId": 0,
+            "name": "",
+            "description": "",
+            "executionTime": "",
+            "status": 0
+          }
+        ]
+      '''
+    }
+  }
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/Task/:startDate&:endDate
+    method: GET
+    mode: none
+    params:path: {
+      startDate: 
+      endDate: 
+    }
+  }
+  
+  response: {
+    headers: {
+      Content-Type: application/json
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        [
+          {
+            "taskId": 0,
+            "name": "",
+            "description": "",
+            "executionTime": "",
+            "status": 0
+          }
+        ]
+      '''
+    }
+  }
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/Task/:startDate&:endDate
+    method: GET
+    mode: none
+    params:path: {
+      startDate: 
+      endDate: 
+    }
+  }
+  
+  response: {
+    headers: {
+      Content-Type: text/json
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        [
+          {
+            "taskId": 0,
+            "name": "",
+            "description": "",
+            "executionTime": "",
+            "status": 0
+          }
+        ]
+      '''
+    }
+  }
+}

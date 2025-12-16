@@ -1,0 +1,141 @@
+meta {
+  name: Добавление задачи в список
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/api/Task
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "taskId": 0,
+    "name": "",
+    "description": "",
+    "executionTime": "",
+    "status": 0
+  }
+}
+
+docs {
+  # Добавление новой задачи
+  Вводите значения для параметров и сохраняете задачу
+  - `name` - название задачи (строка,обязательно).
+  - `description` - описание (строка)
+  - `executionTime` - конечный срок выполнения (дата).
+  - `status` - состаяние задачи (число, обязательно).
+  
+  # ЧаВо
+  status коды:
+  - NotStart (0) - задача не начата,
+  - Running (1) - задача начата
+  - Delayed (2) - задача отложена
+  - Complete (3) - задача завершена
+  
+  Срок - Момент наступления, исполнения чего-нибудь.
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/Task
+    method: POST
+    mode: json
+    body:json: {
+      {
+        "taskId": 0,
+        "name": "",
+        "description": "",
+        "executionTime": "",
+        "status": 0
+      }
+    }
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}
+
+example {
+  name: 201 Response
+  description: Успешное добавление объекта
+  
+  request: {
+    url: {{baseUrl}}/api/Task
+    method: POST
+    mode: json
+    body:json: {
+      {
+        "taskId": 0,
+        "name": "",
+        "description": "",
+        "executionTime": "",
+        "status": 0
+      }
+    }
+  }
+  
+  response: {
+    status: {
+      code: 201
+      text: Created
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}
+
+example {
+  name: 400 Response
+  description: В указанном диапазоне нет элементов
+  
+  request: {
+    url: {{baseUrl}}/api/Task
+    method: POST
+    mode: json
+    body:json: {
+      {
+        "taskId": 0,
+        "name": "",
+        "description": "",
+        "executionTime": "",
+        "status": 0
+      }
+    }
+  }
+  
+  response: {
+    status: {
+      code: 400
+      text: Bad Request
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}

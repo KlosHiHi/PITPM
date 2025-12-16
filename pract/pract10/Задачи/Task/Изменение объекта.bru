@@ -1,0 +1,101 @@
+meta {
+  name: Изменение объекта
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/api/Task/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "taskId": 0,
+    "name": "",
+    "description": "",
+    "executionTime": "",
+    "status": 0
+  }
+}
+
+example {
+  name: 200 Response
+  description: Объект изменён
+  
+  request: {
+    url: {{baseUrl}}/api/Task/:id
+    method: PUT
+    mode: json
+    params:path: {
+      id: 
+    }
+  
+    body:json: {
+      {
+        "taskId": 0,
+        "name": "",
+        "description": "",
+        "executionTime": "",
+        "status": 0
+      }
+    }
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}
+
+example {
+  name: 404 Response
+  description: В указанном диапазоне нет элементов
+  
+  request: {
+    url: {{baseUrl}}/api/Task/:id
+    method: PUT
+    mode: json
+    params:path: {
+      id: 
+    }
+  
+    body:json: {
+      {
+        "taskId": 0,
+        "name": "",
+        "description": "",
+        "executionTime": "",
+        "status": 0
+      }
+    }
+  }
+  
+  response: {
+    status: {
+      code: 404
+      text: Not Found
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}

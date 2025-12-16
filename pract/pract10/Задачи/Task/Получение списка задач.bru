@@ -1,0 +1,136 @@
+meta {
+  name: Получение списка задач
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/api/Task
+  body: none
+  auth: inherit
+}
+
+docs {
+  # Получение списка задач
+  Получение списка всех задач, сохранённых на сервере
+  
+  Вы не получили список (причины)
+  - __Купите интернет__
+  - Сервера отдыхают
+  - Возможно мы написали метод не правильно (НО на моём компьютере работает)
+  
+  # ЧаВо
+  Интернет - Всемирная информационная компьютерная сеть, связывающая между собой как пользователей компьютерных сетей, так и пользователей индивидуальных компьютеров для обмена информацией
+  Сервер - Обслуживающее устройство в системах автоматической обработки информации
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/Task
+    method: GET
+    mode: none
+  }
+  
+  response: {
+    headers: {
+      Content-Type: text/plain
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+        [
+          {
+            "taskId": 0,
+            "name": "",
+            "description": "",
+            "executionTime": "",
+            "status": 0
+          }
+        ]
+      '''
+    }
+  }
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/Task
+    method: GET
+    mode: none
+  }
+  
+  response: {
+    headers: {
+      Content-Type: application/json
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        [
+          {
+            "taskId": 0,
+            "name": "",
+            "description": "",
+            "executionTime": "",
+            "status": 0
+          }
+        ]
+      '''
+    }
+  }
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/Task
+    method: GET
+    mode: none
+  }
+  
+  response: {
+    headers: {
+      Content-Type: text/json
+    }
+  
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: json
+      content: '''
+        [
+          {
+            "taskId": 0,
+            "name": "",
+            "description": "",
+            "executionTime": "",
+            "status": 0
+          }
+        ]
+      '''
+    }
+  }
+}

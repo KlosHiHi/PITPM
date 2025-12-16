@@ -45,7 +45,16 @@ if (app.Environment.IsDevelopment())
 app.MapGet("/health", () =>
 {
     Results.Ok(new { Message = $"API работает в штатном режиме" });
-});
+})
+    .WithName("ShowApi")
+    .WithTags("API health")
+    .Produces(StatusCodes.Status200OK)
+    .WithOpenApi(operation =>
+    {
+        operation.Summary = "ѕроверка состо€ни€ работы API";
+        operation.Description = "≈сли ответ не получен -> значит API не работает";
+        return operation;
+    });
 
 app.MapGet("/tasks", static (DateTime start, DateTime end) =>
 {
@@ -63,7 +72,28 @@ app.MapGet("/tasks", static (DateTime start, DateTime end) =>
         ExecutionTime = new(),
         Status = WebApi.Model.TaskStatus.Running
     });
-});
+})
+    .WithName("TakeTasks")
+    .WithTags("ShowListOgTask")
+    .Produces(StatusCodes.Status400BadRequest)
+    .WithOpenApi(operation =>
+    {
+        operation.Summary = "ѕолучение задач внутри временного диапазона";
+        operation.Description = "ѕишите начальную и конечную дату диапазона, и получаете список задач.";
+        operation.Parameters.Add(
+            new OpenApiParameter()
+            {
+                Name = "start",
+                Description = "начало диапазона дат"
+            });
+        operation.Parameters.Add(
+            new OpenApiParameter()
+            {
+                Name = "end",
+                Description = "конец диапазона дат"
+            });
+        return operation;
+    });
 
 app.UseAuthorization();
 
